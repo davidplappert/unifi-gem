@@ -31,7 +31,6 @@ module Unifi
 
     def login
       response = self.class.post("/login", body: "{'username':'#{@username}', 'password':'#{@password}'}")
-      p response.headers
       @cookies = response.headers['set-cookie']
     end
 
