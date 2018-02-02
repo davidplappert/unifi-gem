@@ -22,16 +22,16 @@ module Unifi
       @site = options[:site] || ENV["UNIFI_SITE"] || "default"
       @username = options[:username] || ENV["UNIFI_USERNAME"]
       @password = options[:password] || ENV["UNIFI_PASSWORD"]
-      self.class.default_options.merge!(headers: { 'Content-Type': 'application/json',
-                                                   'Accept': 'application/json' },
+      self.class.default_options.merge!(headers: { 'Content-Type'=>'application/json',
+                                                   'Accept'=>'application/json' },
                                         verify: false)
       login
-      self.class.default_options.merge!(headers: { 'Cookie': @cookies } )
+      self.class.default_options.merge!(headers: { 'Cookie'=>@cookies } )
     end
 
     def login
       response = self.class.post("/login",
-                                 body: "{'username': '#{@username}', 'password': '#{@password}'}")
+                                 body: "{'username'=>'#{@username}', 'password'=>'#{@password}'}")
       @cookies = response.headers['set-cookie']
     end
 
