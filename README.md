@@ -1,6 +1,10 @@
 # Unifi
 A Ruby interface to UniFi Controller API. Supported versions 5.x.x.
-It's fork [Unifi Api Browser](https://github.com/malle-pietje/UniFi-API-browser/blob/master/phpapi/class.unifi.php) written in php.
+Reimplemented from [Unifi Api Client](https://github.com/Art-of-WiFi/UniFi-API-client) written in php.
+
+Follow the fork tree for the original:
+* https://github.com/kirpen/unifi
+* https://github.com/zumkorn/unifi
 
 ## Installation
 
@@ -131,16 +135,16 @@ It will return something like that:
 * stat_sysinfo
 * stat_voucher
 
-You can see the documentation for the methods [here](https://github.com/malle-pietje/UniFi-API-browser/blob/master/phpapi/class.unifi.php).
+You can see the documentation for the methods [here](https://github.com/Art-of-WiFi/UniFi-API-client/blob/master/src/Client.php).
 
 ## Useful links
 
-* [Original Unifi API Browser](https://github.com/malle-pietje/UniFi-API-browser)
+* [Original Unifi API Browser](https://github.com/Art-of-WiFi/UniFi-API-browser)
 * [API as published by Ubiquiti](https://www.ubnt.com/downloads/unifi/5.4.14/unifi_sh_api)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/zumkorn/unifi. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/davisonja/unifi. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 

@@ -7,12 +7,12 @@ Gem::Specification.new do |spec|
   spec.name          = "unifi"
   spec.version       = Unifi::VERSION
   spec.date          = '2017-07-23'
-  spec.authors       = ["Sergey Korolev"]
-  spec.email         = ["zumkorn@gmail.com"]
+  spec.authors       = ["Sergey Korolev", "Julian Davison"]
+  spec.email         = ["zumkorn@gmail.com", "julian@davison.org.nz"]
 
   spec.summary       = %q{A Ruby interface to UniFi Controller API}
   spec.description   = %q{A Ruby interface to UniFi Controller API.}
-  spec.homepage      = "https://github.com/zumkorn/unifi"
+  spec.homepage      = "https://github.com/davisonja/unifi"
   spec.license       = "MIT"
 
 
