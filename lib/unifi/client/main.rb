@@ -106,7 +106,7 @@ module Unifi
 
       def reconnect_sta(mac)
         body = { cmd: 'kick-sta', mac: mac.downcase }
-        response = self.class.post("/s/#{@site}/cmd/sitemgr", { body: body.to_json })
+        response = self.class.post("/s/#{@site}/cmd/stamgr", { body: body.to_json })
         response.parsed_response
       end
 
