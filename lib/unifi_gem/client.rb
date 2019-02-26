@@ -1,10 +1,10 @@
-# ./lib/unifi/client.rb
-require "unifi/client/vouchers"
-require "unifi/client/sites"
-require "unifi/client/guests"
-require "unifi/client/wlan"
-require "unifi/client/main"
-
+# ./lib/unifi-gem/client.rb
+require "unifi-gem/client/vouchers"
+require "unifi-gem/client/sites"
+require "unifi-gem/client/guests"
+require "unifi-gem/client/wlan"
+require "unifi-gem/client/main"
+require 'logger'
 module Unifi
 
   class Client
@@ -15,10 +15,14 @@ module Unifi
     include Unifi::Client::Wlan
     include Unifi::Client::Main
 
+    # logger ::Logger.new(STDOUT), :debug, :curl
+
     format :json
     def initialize(options = {})
+      # @logger = ::Logger.new STDOUT, :debug, :curl
       options[:url] ||= ENV["UNIFI_URL"]
       self.class.base_uri "https://#{options[:url]}/api"
+      @selfbaseuri = "https://#{options[:url]}"
       @site = options[:site] || ENV["UNIFI_SITE"] || "default"
       @username = options[:username] || ENV["UNIFI_USERNAME"]
       @password = options[:password] || ENV["UNIFI_PASSWORD"]
@@ -30,7 +34,17 @@ module Unifi
     end
 
     def login
-      response = self.class.post("/login", body: "{'username':'#{@username}', 'password':'#{@password}'}")
+      options = {
+        headers: {
+          Referer: "#{@selfbaseuri}/login"
+        },
+        body: JSON.generate({
+          username: "#{@username}",
+          password: "#{@password}"
+        })
+      }
+      response = self.class.post("/login", options)
+      puts response
       @cookies = response.headers['set-cookie']
     end
 

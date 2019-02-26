@@ -1,18 +1,18 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'unifi/version'
+require 'unifi_gem/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "unifi"
+  spec.name          = "unifi_gem"
   spec.version       = Unifi::VERSION
-  spec.date          = '2017-07-23'
-  spec.authors       = ["Sergey Korolev", "Julian Davison"]
-  spec.email         = ["zumkorn@gmail.com", "julian@davison.org.nz"]
+  spec.date          = '2019-02-26'
+  spec.authors       = ["Julian Davison"]
+  spec.email         = ["julian@davison.org.nz"]
 
   spec.summary       = %q{A Ruby interface to UniFi Controller API}
   spec.description   = %q{A Ruby interface to UniFi Controller API.}
-  spec.homepage      = "https://github.com/davisonja/unifi"
+  spec.homepage      = "https://github.com/davisonja/unifi-gem"
   spec.license       = "MIT"
 
 
