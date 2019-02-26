@@ -1,6 +1,6 @@
 require "httparty"
-require "unifi-gem/version"
-require "unifi-gem/client"
+require "unifi_gem/version"
+require "unifi_gem/client"
 
 module Unifi
 

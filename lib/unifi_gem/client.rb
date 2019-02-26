@@ -1,9 +1,9 @@
 # ./lib/unifi-gem/client.rb
-require "unifi-gem/client/vouchers"
-require "unifi-gem/client/sites"
-require "unifi-gem/client/guests"
-require "unifi-gem/client/wlan"
-require "unifi-gem/client/main"
+require "unifi_gem/client/vouchers"
+require "unifi_gem/client/sites"
+require "unifi_gem/client/guests"
+require "unifi_gem/client/wlan"
+require "unifi_gem/client/main"
 require 'logger'
 module Unifi
 
