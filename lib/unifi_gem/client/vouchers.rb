@@ -1,5 +1,5 @@
 # ./lib/unifi/client/vouchers.rb
-module Unifi
+module UnifiGem
   class Client
 
     module Vouchers

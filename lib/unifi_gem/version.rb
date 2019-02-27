@@ -1,3 +1,3 @@
-module Unifi
-  VERSION = "0.1.2"
+module UnifiGem
+  VERSION = "0.2.3"
 end

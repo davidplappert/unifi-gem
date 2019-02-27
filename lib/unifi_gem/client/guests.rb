@@ -1,5 +1,5 @@
 # ./lib/unifi/client/guests.rb
-module Unifi
+module UnifiGem
   class Client
 
     module Guests

@@ -1,5 +1,5 @@
 # ./lib/unifi/client/sites.rb
-module Unifi
+module UnifiGem
   class Client
 
     module Sites

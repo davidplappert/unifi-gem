@@ -1,5 +1,5 @@
 # ./lib/unifi/client/main.rb
-module Unifi
+module UnifiGem
   class Client
 
     module Main

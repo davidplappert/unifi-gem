@@ -5,7 +5,7 @@ require 'unifi_gem/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "unifi_gem"
-  spec.version       = Unifi::VERSION
+  spec.version       = UnifiGem::VERSION
   spec.date          = '2019-02-26'
   spec.authors       = ["Julian Davison"]
   spec.email         = ["julian@davison.org.nz"]

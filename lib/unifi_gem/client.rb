@@ -5,15 +5,15 @@ require "unifi_gem/client/guests"
 require "unifi_gem/client/wlan"
 require "unifi_gem/client/main"
 require 'logger'
-module Unifi
+module UnifiGem
 
   class Client
     include HTTParty
-    include Unifi::Client::Vouchers
-    include Unifi::Client::Sites
-    include Unifi::Client::Guests
-    include Unifi::Client::Wlan
-    include Unifi::Client::Main
+    include UnifiGem::Client::Vouchers
+    include UnifiGem::Client::Sites
+    include UnifiGem::Client::Guests
+    include UnifiGem::Client::Wlan
+    include UnifiGem::Client::Main
 
     # logger ::Logger.new(STDOUT), :debug, :curl
 

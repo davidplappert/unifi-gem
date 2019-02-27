@@ -1,5 +1,5 @@
 # ./lib/unifi/client/wlan.rb
-module Unifi
+module UnifiGem
   class Client
 
     module Wlan
