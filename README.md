@@ -28,7 +28,7 @@ Unifi gem needs url, site, login, password:
 
 ```ruby
 client = Unifi::Client.new({url:"demo.ubnt.com", 
-                            site: "default"
+                            site: "default",
                             username:"superadmin", 
                             password:"superadmin"})
 client.list_health
